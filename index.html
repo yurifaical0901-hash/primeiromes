@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Preimero mes MOMO</title>
+</head>
+<body>
+    <h1 id="Titulo">Feliz Primeiro mês MOMO</h1>
+    <h2>
+        <p id="text"><strong>Feliz 1 mês MOMO</strong><br>
+            Esses Primeiro mês MOMO foi incrivel, conhecer vc foi incrivel<br>
+            vc me mudou mt MOMO, vc me fez melhor, vc me ajudou a voltar a <br>
+            amar , e essa pessoa que eu amo e vc. Jamais outra pessoa consiguiu<br>
+            me fazer voltar a sentir felicidade e amor como vc consiguiu fazer eu sentir<br>
+            vc MOMO é e vai ser especial pra min ora sempre e quero trilar meu futuro com vc <br> 
+        </p>
+        <p id="text2">
+            Eu tava pensando no que eu poderia fazer pra vc pra comemorar nosso Primeiro mês<br>
+            ai eu pensei em fazer esse site, pq é uma coisa que vc pode abrir sempre<br>
+            e reler quando vc quiser.<br>
+            E eu sei o quanto vc gosta d ficar lendo e relendo as coisas que dão a vc. Ent <br> 
+            esse site pra min foi a melhor maneira d mostrar isso pra vc.<br>
+            E MOMO nunca duvide das coisa que eu falo pra vc pq uma das coisas que eu n consigo<br>
+            fazer é mentir pras pessoas de que eu amo, eu nunca vou falar um "Eu te amo" sem <br>
+            realmente sentir esse amor por vc MOMO, jamis duvide disso.<br>
+        </p>
+        <p id="text3">
+            MOMO, eu espero que vc goste desse presente, assim como eu falei esse presente <br>
+            é eterno vc pode entrar nesse link quando vc quiser que vai estar funcionando<br>
+            e caso n esteje vc me avisa que eu do meu jeito e resolvo o problema que for pra vc<br>
+            Eu nuca fui d escrver MOMO mt menos d fazer coisas a mão assim, sempre achei que pra<br>
+            presentiar uma pessoa principamente se for alguem que eu amo eu precisaria d comprar mts<br>
+            coisas, mas eu to vendo que nem sempre eu preciso disso. Eu acho que se eu gastar meu tempo<br>
+            e esforço ja se torna um belo presente. E espero que vc pense o msm MOMO<br>
+        </p>
+        <p id="text4">
+            Eu MOMO, to fazendo isso hj acho que deve ter estranhado<br> por eu n mandar mt msg hj <br>
+            , mas saiba que eu tava ocupado ksksksk.<br>
+            Esse site demanda tempo pq eu mt coisa que tem que <br>fazer aind mais se vc deixa bem bonitinho<br>
+            como eu to deixando pra vc MOMO<br>
+            e outra coisa que eu acho que vc deve tar achando <br> estranhando é eu n ter falado nd d parabens<br>
+            do Primeiro mês sksksksks<br>
+            Mas, é isso momo espero que vc tenha gostado, saiba que eu sempre vou te amar<br>
+            por tudo oq vc fez e ainda faz po min MOMO Vc e incrivel é perfeita e sempre maravilhosa<br>
+            <strong> te amo mtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmt<br>mtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtmtm<br>
+            bjssss MOMO</strong><br>
+            Dps me fala oq vc achou MOMO
+        </p>
+    </h2>
+    <button id="Botao1" class="Botao1" onclick="b1()"> =></button>
+    <button id="Botao2" class="Botao2" onclick="b2()"> <=</button>
+    <script>
+        let imagens=["Foto princ.jpg","foto1.jpg","foto2.jpg","foto3.jpg","Foto4.jpeg"]
+        let ind=0
+        function trocarImagem() {
+        let imagem = document.getElementById("Foto");
+        imagem.style.opacity = 0;
+        setTimeout(function() {
+        imagem.src = imagens[ind];
+        imagem.style.opacity = 1; 
+        }, 600);}
+        function b1(){
+            ind++;
+            if(ind>=imagens.length){
+             ind=0
+            }
+            trocarImagem();
+            }
+        function b2(){
+            ind--;
+            if(ind<0){
+                ind=imagens.length-1;
+            }
+            trocarImagem();
+        }
+        setInterval(b1,4000)
+    </script>
+</body>
+<img id="Foto" height="500px" width="500px" alt="deu ruim" src="Foto princ.jpg">
+<style>
+    img{
+        transition: opacity 0.5s ease;
+    }
+    .Botao1{
+        font-size: large;
+        background-color: rgb(51, 3, 3);
+        color: white;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 500px;
+        top: 50px;
+    }
+    .Botao2{
+        font-size: large;
+        background-color: rgb(51, 3, 3);
+        color: white;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 120px ;
+        top: 50px;
+    }
+    body{
+        color: rgb(255, 255, 255);
+            height: 100vh;
+            background: 
+            radial-gradient(circle, 
+             rgba(0,0,0,0) 50%, 
+             rgba(0,0,0,0.6) 100%
+              ) rgb(51, 3, 3);
+    }
+    #Foto{
+        position: relative;
+        border-radius: 20px;
+        left: 10px;
+    }
+    #Titulo{
+        position: relative;
+        font-style: italic;
+        left: 180px;
+    }
+    #text{
+        position: absolute;
+        top: 700px;
+        left: 20px;
+    }
+    #text2{
+        position: absolute;
+        font-style: italic;
+        left: 20px;
+        top: 1100px;
+
+    }
+    #text3{
+        position: absolute;
+        font-style: italic;
+        left: 20px;
+        top: 1570px;
+    }
+    #text4{
+        position: absolute;
+        font-style: italic;
+        left: 20px;
+        top:2100px ;
+    }
+</style>
+</htm
